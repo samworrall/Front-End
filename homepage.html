@@ -12,6 +12,16 @@
       <button type="button" id="hover" onmouseout="unhover(this)" onmouseover="hover(this)">Mouse over me</button>
     </div>
 
+    <div id="list">
+      <h4>These are some of my favourite things:</h4>
+      <p>Food</p>
+      <p>Sleep</p>
+      <p>The outdoors</p>
+      <p>Movies</p>
+      <p>Cheese</p>
+      <p id="green">The colour green (click me)</p>
+    </div>
+
     <script type="text/javascript">
         clicked = function(id) {
           id.innerHTML = 'Clicked!'
@@ -33,11 +43,22 @@
           alert("This should appear first!")
         }
 
+        togglePColour = function() {
+          var allThePs = document.getElementById("list").getElementsByTagName("p")
+          var newColor = allThePs[0].style.color === "green" ? "black" : "green"
+          for (i = 0; i < allThePs.length; i++) {
+            allThePs[i].style.color = newColor;
+          }
+        }
+
         var clickableButton = document.getElementById("click")
         clickableButton.addEventListener("click", clicked2, false)
 
         var buttons = document.getElementById("buttons")
         buttons.addEventListener("click", firstEvent, true)
+
+        var greenButton = document.getElementById("green")
+        greenButton.addEventListener("click", togglePColour)
 
     </script>
   </body>
