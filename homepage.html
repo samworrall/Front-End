@@ -29,8 +29,15 @@
           alert("You have clicked the button!")
         }
 
+        firstEvent = function() {
+          alert("This should appear first!")
+        }
+
         var clickableButton = document.getElementById("click")
-        clickableButton.addEventListener("click", clicked2)
+        clickableButton.addEventListener("click", clicked2, false)
+
+        var buttons = document.getElementById("buttons")
+        buttons.addEventListener("click", firstEvent, true)
 
     </script>
   </body>
