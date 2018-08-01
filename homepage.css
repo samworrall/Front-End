@@ -16,16 +16,33 @@ body {
   width: 10em;
   height: 5em;
   margin: auto;
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
 }
 
 #hover {
   width: 30em;
   height: 5em;
   margin: auto;
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
 }
 
 #list {
   border: solid;
   padding: 5px;
   background-color: #4555;
+}
+
+#flex-container {
+  display: flex;
+}
+
+#flex-container .box {
+  border: solid;
+  border-width: 2px;
+  margin: 5px;
+  padding: 4px;
 }
