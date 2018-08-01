@@ -50,3 +50,17 @@ body {
   border-radius: 10px;
   flex-basis: 200px;
 }
+
+#grid-container {
+
+}
+
+#grid-container .grid-box {
+  border: solid;
+  background-color: #4255;
+  border-width: 2px;
+  margin: 5px;
+  padding: 2px;
+  width: 50px;
+  text-align: center;
+}
