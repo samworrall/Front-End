@@ -38,11 +38,15 @@ body {
 
 #flex-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #flex-container .box {
   border: solid;
+  background-color: #4555;
   border-width: 2px;
   margin: 5px;
   padding: 4px;
+  border-radius: 10px;
+  flex-basis: 200px;
 }
