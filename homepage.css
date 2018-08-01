@@ -3,19 +3,25 @@ body {
 }
 
 #buttons {
+  display: flex;
   border: solid;
   margin: 5px;
   background-color: #4555;
+  width: 50%;
+  height: 100px;
+  justify-content: space-around;
 }
 
 #click {
   width: 10em;
   height: 5em;
+  margin: auto;
 }
 
 #hover {
   width: 30em;
   height: 5em;
+  margin: auto;
 }
 
 #list {
