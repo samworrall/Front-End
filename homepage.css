@@ -1,3 +1,25 @@
 body {
   background-color: #4566
 }
+
+#buttons {
+  border: solid;
+  margin: 5px;
+  background-color: #4555;
+}
+
+#click {
+  width: 10em;
+  height: 5em;
+}
+
+#hover {
+  width: 30em;
+  height: 5em;
+}
+
+#list {
+  border: solid;
+  padding: 5px;
+  background-color: #4555;
+}
