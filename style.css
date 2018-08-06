@@ -2,6 +2,48 @@ body {
   background-color: white;
 }
 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #72c0ea;
+}
+
+.navbar li {
+  float: left;
+  font-size: 28px;
+}
+
+.nav-button-content {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+#title {
+  color: #e8eef2;
+  margin: 5px;
+}
+
+.nav-buttons-container {
+
+
+}
+
+.nav-buttons {
+  list-style-type: none;
+
+}
+
+.nav-button {
+  float: right;
+
+}
+
 #buttons {
   display: flex;
   border: solid;
