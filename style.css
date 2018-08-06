@@ -1,12 +1,12 @@
 body {
-  background-color: #4566
+  background-color: white;
 }
 
 #buttons {
   display: flex;
   border: solid;
   margin: 5px;
-  background-color: #4555;
+  background-color: #4566;
   width: 50%;
   height: 100px;
   justify-content: space-around;
@@ -84,4 +84,8 @@ body {
   border: solid;
   border-width: 2px;
   margin: 2px;
+}
+
+.hovered {
+  background-color: #43f2a0;
 }

@@ -12,7 +12,7 @@
 
     <h1 id="Title">Sam Worrall</h1>
     <div id="buttons">
-      <button type="button" id="click" onclick="clicked(this)" style="cursor: pointer;">Click Me!</button>
+      <button type="button" id="click" onclick="clicked(this)" onmouseout="changeColourOnHoverOut(this)" onmouseover="changeColourOnHover(this)" style="cursor: pointer;">Click Me!</button>
       <button type="button" id="hover" onmouseout="unhover(this)" onmouseover="hover(this)">Mouse over me</button>
     </div>
 
@@ -33,10 +33,20 @@
 
         unhover = function(id) {
           id.innerHTML = 'Thats much better, try again and see what happens!'
+          changeColourOnHoverOut(id)
         }
 
         hover = function(id) {
           id.innerHTML = 'Take your HANDS off me!'
+          changeColourOnHover(id)
+        }
+
+        changeColourOnHover = function(id) {
+          id.setAttribute("class", "hovered")
+        }
+
+        changeColourOnHoverOut = function(id) {
+          id.setAttribute("class", "unhovered")
         }
 
         clicked2 = function() {
