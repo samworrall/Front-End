@@ -12,7 +12,7 @@
 
     <h1 id="Title">Sam Worrall</h1>
     <div id="buttons">
-      <button type="button" id="click" onclick="clicked(this)" style="cursor: pointer;">Click Me!</button>
+      <button type="button" id="click" style="cursor: pointer;">Click Me!</button>
       <button type="button" id="hover">Mouse over me</button>
     </div>
 
@@ -67,6 +67,9 @@
 
         var clickableButton = document.getElementById("click")
         clickableButton.addEventListener("click", clicked2, false)
+        clickableButton.addEventListener("click", function(event) {
+          clicked(event.target)
+        })
         clickableButton.addEventListener("mouseover", function(event) {
           changeColourOnHover(event.target)
         })
