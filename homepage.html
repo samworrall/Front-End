@@ -12,7 +12,7 @@
 
     <h1 id="Title">Sam Worrall</h1>
     <div id="buttons">
-      <button type="button" id="click" onclick="clicked(this)" onmouseout="changeColourOnHoverOut(this)" onmouseover="changeColourOnHover(this)" style="cursor: pointer;">Click Me!</button>
+      <button type="button" id="click" onclick="clicked(this)" style="cursor: pointer;">Click Me!</button>
       <button type="button" id="hover" onmouseout="unhover(this)" onmouseover="hover(this)">Mouse over me</button>
     </div>
 
@@ -67,6 +67,13 @@
 
         var clickableButton = document.getElementById("click")
         clickableButton.addEventListener("click", clicked2, false)
+        clickableButton.addEventListener("mouseover", function(event) {
+          changeColourOnHover(event.target)
+        })
+        clickableButton.addEventListener("mouseout", function(event) {
+          changeColourOnHoverOut(event.target)
+        })
+
 
         var buttons = document.getElementById("buttons")
         buttons.addEventListener("click", firstEvent, true)
