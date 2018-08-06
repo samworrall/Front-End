@@ -13,7 +13,7 @@
     <h1 id="Title">Sam Worrall</h1>
     <div id="buttons">
       <button type="button" id="click" onclick="clicked(this)" style="cursor: pointer;">Click Me!</button>
-      <button type="button" id="hover" onmouseout="unhover(this)" onmouseover="hover(this)">Mouse over me</button>
+      <button type="button" id="hover">Mouse over me</button>
     </div>
 
     <div id="list">
@@ -74,6 +74,13 @@
           changeColourOnHoverOut(event.target)
         })
 
+        var hoverableButton = document.getElementById("hover")
+        hoverableButton.addEventListener("mouseover", function(event) {
+          hover(event.target)
+        })
+        hoverableButton.addEventListener("mouseout", function(event) {
+          unhover(event.target)
+        })
 
         var buttons = document.getElementById("buttons")
         buttons.addEventListener("click", firstEvent, true)
