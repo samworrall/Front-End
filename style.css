@@ -28,6 +28,10 @@ body {
   color: black;
 }
 
+.nav-button-content:hover {
+  background-color: #abafb2;
+}
+
 .content {
   margin: 50px;
 }
@@ -86,6 +90,10 @@ body {
   flex-basis: 200px;
 }
 
+#flex-container .box:hover {
+  background-color: #abafb2;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
@@ -101,6 +109,10 @@ body {
   vertical-align: middle;
   line-height: 90px;
   font-size: 50px;
+}
+
+#grid-container .grid-box:hover {
+  background-color: #abafb2;
 }
 
 #grid-box-1 {
@@ -119,6 +131,10 @@ body {
   border: solid;
   border-width: 2px;
   margin: 2px;
+}
+
+.one-box:hover {
+  background-color: #818384;
 }
 
 .hovered {
