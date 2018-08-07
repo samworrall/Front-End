@@ -11,7 +11,7 @@ body {
   top: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #72c0ea;
+  background-color: #a6eaa9;
 }
 
 .navbar li {
@@ -38,7 +38,7 @@ body {
 }
 
 #title {
-  color: #e8eef2;
+  color: #8c918d;;
   margin: 5px;
 }
 
@@ -148,11 +148,20 @@ body {
   position: fixed;
   width: 160px;
   height: 100%;
-
-
+  z-index: 1;
   margin: 5px;
-  background-color: #72c0ea;
+  background-color: #a6eaa9;
   border: solid;
   border-width: 1px;
+}
 
+.sidebar .pp-container {
+  margin-top: 30px;
+  padding: 14px;
+}
+
+.sidebar .profile-picture {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
 }
