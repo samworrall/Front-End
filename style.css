@@ -34,6 +34,7 @@ body {
 
 .content {
   margin: 50px;
+  margin-left: 180px;
 }
 
 #title {
@@ -49,6 +50,7 @@ body {
   width: 50%;
   height: 100px;
   justify-content: space-around;
+  padding: 5px;
 }
 
 #click {
@@ -70,6 +72,7 @@ body {
 }
 
 #list {
+  display: grid;
   border: solid;
   padding: 5px;
   background-color: #e1e6ea;
@@ -139,4 +142,17 @@ body {
 
 .hovered {
   background-color: #43f2a0;
+}
+
+.sidebar {
+  position: fixed;
+  width: 160px;
+  height: 100%;
+
+
+  margin: 5px;
+  background-color: #72c0ea;
+  border: solid;
+  border-width: 1px;
+
 }
